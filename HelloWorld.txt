@@ -1,3 +1,6 @@
 1HelloWorlds
-MasterTest
+<<<<<<< HEAD
 HelloWorld to Create Conflict
+=======
+HelloWorld for Conflict hot-fix
+>>>>>>> hot-fix
