@@ -5,11 +5,38 @@
 #include "Log.h"
 int main()
 {
-	LOGI("SVE_TOOL","What%d", 1);
-	LOGD("SVE_TOOL", "What%d", 1);
-	LOGW("SVE_TOOL", "What%d", 1);
-	LOGE("SVE_TOOL", "What%d", 1);
+	//非debug模式下不输出debug信息
+	//Debug模式下输出debug信息
+	//bDebugData用于控制是否需要添加时间戳，换行以及显示前置信息
+	//SetLogMode(LOGLEVEL::LEV_NORMAL);
+	//LOGI(0,"INFO ");
+	//LOGI(1, "INFO ");
+	//LOGD(0, "Debug ");
+	//LOGD(1, "Debug ");
+	//LOGW(0, "WARNING ");
+	//LOGW(1, "WARNING ");
+	//LOGE(0, "ERROR ");
+	//LOGE(1, "ERROR ");
+	//SetLogMode(LOGLEVEL::LEV_FATAL);
+	//LOGI(0, "INFO ");
+	//LOGI(1, "INFO ");
+	//LOGD(0, "Debug ");
+	//LOGD(1, "Debug ");
+	//LOGW(0, "WARNING ");
+	//LOGW(1, "WARNING ");
+	//LOGE(0, "ERROR ");
+	//LOGE(1, "ERROR ");
+	SetLogMode(LOGLEVEL::LEV_DEBUG);
+	LOGI(0, "INFO ");
+	LOGI(1, "INFO ");
+	LOGD(0, "Debug ");
+	LOGD(1, "Debug ");
+	LOGW(0, "WARNING ");
+	LOGW(1, "WARNING ");
+	LOGE(0, "ERROR ");
+	LOGE(1, "ERROR ");
     //std::cout << "Hello World!\n";
+	FlushAllLogBufData();
 	system("pause");
 	return 0;
 }
