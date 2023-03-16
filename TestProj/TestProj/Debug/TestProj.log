@@ -1,0 +1,3 @@
+﻿  main.cpp
+d:\project\testproj\testproj\main.cpp(66): warning C4018: “<”: 有符号/无符号不匹配
+  TestProj.vcxproj -> D:\Project\TestProj\Debug\TestProj.exe
